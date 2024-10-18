@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.btn-dark {
+  @apply border-2 border-[#0A2640] text-[#0A2640] rounded-full py-4 px-14;
+}
+.btn-white {
+  @apply border-2 border-[#0A2640] rounded-full font-bold;
+}
+.footer-header {
+  @apply font-bold text-xl leading-8 font-openSans mb-6;
+}
+.footer-text {
+  @apply font-normal text-xl leading-8 font-openSans text-[#777777];
+}
