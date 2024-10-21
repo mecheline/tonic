@@ -16,34 +16,39 @@ const Blog = () => {
         <div>
           <div className="flex flex-col md:flex-row md:flex-wrap gap-x-8 gap-y-16 w-[90%] mx-auto">
             {blogData.map((service) => (
-              <div key={service.title} className="md:w-[46%] lg:w-[30%]">
+              <div
+                key={service.title}
+                className="md:w-[46%] lg:w-[30%] hover:shadow-md hover:bg-gray-100 hover:rounded-lg"
+              >
                 <img
                   src={service.image}
                   width="300px"
                   height="209px"
                   alt={service.title}
+                  className="cursor-pointer"
                 />
-
-                <div className="flex items-center justify-between gap-x-8 my-4">
-                  <div className="font-openSans font-bold text-[#0A2640] text-base leading-7">
-                    {service.category}
+                <div className="py-4 px-1">
+                  <div className="flex items-center justify-between gap-x-8 my-4">
+                    <div className="font-openSans font-bold text-[#0A2640] text-base leading-7">
+                      {service.category}
+                    </div>
+                    <div className="font-openSans font-normal text-[#777777] text-base leading-7">
+                      {service.date}
+                    </div>
                   </div>
-                  <div className="font-openSans font-normal text-[#777777] text-base leading-7">
-                    {service.date}
+                  <div className="font-openSans font-normal text-xl lg:text-2xl leading-8 h-32 cursor-pointer">
+                    {service.title}
                   </div>
+                  <div className="flex gap-x-2 mt-4">
+                    <div>
+                      <img src={service.pic} />
+                    </div>
+                    <div className="font-openSans font-normal text-base leading-7">
+                      {service.name}
+                    </div>
+                  </div>
+                  <hr className="block lg:hidden mt-12" />
                 </div>
-                <div className="font-openSans font-normal text-xl lg:text-2xl leading-8 h-32">
-                  {service.title}
-                </div>
-                <div className="flex gap-x-2 mt-4">
-                  <div>
-                    <img src={service.pic} />
-                  </div>
-                  <div className="font-openSans font-normal text-base leading-7">
-                    {service.name}
-                  </div>
-                </div>
-                <hr className="mt-12" />
               </div>
             ))}
           </div>

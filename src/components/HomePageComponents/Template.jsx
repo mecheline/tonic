@@ -1,4 +1,8 @@
 import { testimonialData } from "../HomeData";
+import {
+  IoArrowBackCircleOutline,
+  IoArrowForwardCircleOutline,
+} from "react-icons/io5";
 
 const Template = () => {
   return (
@@ -8,8 +12,16 @@ const Template = () => {
           An enterprise template to ramp up your company website
         </div>
         <div className="hidden md:flex gap-x-4 mt-4 md:mt-0 ">
-          <img src="/arrBkd.svg" width="72" height="72" alt="direction" />
-          <img src="/arrFwd.svg" width="72" height="72" alt="direction" />
+          <IoArrowBackCircleOutline
+            size={72}
+            className="cursor-pointer text-white hover:text-[#ccc]"
+          />
+          <IoArrowForwardCircleOutline
+            size={72}
+            className="cursor-pointer text-white hover:text-[#ccc]"
+          />
+          {/* <img src="/arrBkd.svg" width="72" height="72" alt="direction" />
+          <img src="/arrFwd.svg" width="72" height="72" alt="direction" /> */}
         </div>
       </div>
 
@@ -19,7 +31,7 @@ const Template = () => {
             key={testimonial.name}
             className="bg-white rounded-xl w-full md:w-[46%] lg:w-[30%] p-6 mb-8"
           >
-            <div className="font-openSans font-normal text-xl md:text-2xl leading-9">
+            <div className="font-openSans font-normal text-xl md:text-2xl leading-9 cursor-pointer">
               {testimonial.text}
             </div>
             <div className="mt-8">
