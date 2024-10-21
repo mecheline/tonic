@@ -7,7 +7,7 @@ import "aos/dist/aos.css";
 
 const StartNow = () => {
   const [email, setEmail] = useState("");
-  const [isValid, setIsValid] = useState(true);
+  const [isValid, setIsValid] = useState(false);
 
   // Regex for email validation
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -73,7 +73,9 @@ const StartNow = () => {
 
               <button
                 onClick={submitEmailHandler}
-                className="btn-white bg-[#65E4A3] py-4 px-14 md:px-6 lg:px-14"
+                className={`btn-white bg-[#65E4A3] py-4 px-14 md:px-6 lg:px-14 ${
+                  isValid ? "" : "cursor-not-allowed"
+                } `}
                 disabled={!isValid}
               >
                 Start now
