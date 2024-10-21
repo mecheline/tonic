@@ -62,10 +62,10 @@ const Navbar = () => {
             <Link
               to={item.path}
               key={item.title}
-              className={`flex items-center font-semibold text-base leading-7 text-[#0A2640] hover:underline hover:underline-offset-8 font-manrope ${
+              className={`flex items-center font-semibold text-base leading-7 text-[#0A2640] font-manrope ${
                 item.btn
                   ? `btn-white py-2 px-10 hover:bg-[#0A2640] hover:text-white`
-                  : ``
+                  : `hover:underline hover:underline-offset-8`
               }`}
             >
               {item.title}
@@ -104,10 +104,10 @@ const Navbar = () => {
           <Link
             to={item.path}
             key={item.title}
-            className={`block py-4 font-semibold text-base leading-7 text-[#0A2640] hover:underline hover:underline-offset-8 font-manrope ${
+            className={`block py-4 font-semibold text-base leading-7 text-[#0A2640] font-manrope ${
               item.btn
                 ? `btn-white py-2 px-8 w-fit mx-auto mb-4 hover:bg-[#0A2640] hover:text-white`
-                : ``
+                : `hover:underline hover:underline-offset-8`
             }`}
           >
             {item.title}
