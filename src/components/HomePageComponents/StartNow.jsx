@@ -44,7 +44,7 @@ const StartNow = () => {
             <div
               data-aos="zoom-in"
               data-aos-duration="1000"
-              className="font-manrope font-normal text-2xl md:text-3xl lg:text-5xl leading-[45px] md:leading-[52px] lg:leading-[72px] text-white relative z-50 "
+              className="font-manrope font-normal text-2xl md:text-3xl lg:text-5xl leading-[45px] md:leading-[52px] lg:leading-[72px] text-white relative z-40 "
             >
               An enterprise template to ramp up your company website
             </div>
