@@ -1,4 +1,4 @@
-// import { connectData } from "../HomeData";
+import { CiLogin } from "react-icons/ci";
 
 import { useEffect } from "react";
 import { FaRegEdit } from "react-icons/fa";
@@ -53,8 +53,9 @@ const Connect = () => {
               </div>
             ))}
           </div>
-          <button className="btn-dark mt-8 w-full md:w-auto mx-auto hover:bg-[#0A2640] hover:text-white">
+          <button className="flex items-center justify-center gap-x-2 font-manrope btn-dark mt-8 w-full md:w-auto  hover:bg-[#0A2640] hover:text-white">
             Start now
+            <CiLogin />
           </button>
         </div>
       </div>

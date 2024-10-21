@@ -36,13 +36,13 @@ const Services = () => {
                 height="354px"
                 alt={service.title}
               />
-              <div className="font-openSans font-normal text-2xl leading-9 text-white mt-8 mb-10">
+              <div className="font-openSans font-normal text-2xl leading-9 text-white mt-4 mb-4">
                 {service.title}
               </div>
               <div className="">
                 <Link
                   to={""}
-                  className="font-openSans flex items-center underline underline-offset-[18px] decoration-1 font-bold text-xl leading-9 text-white"
+                  className="font-openSans flex items-center hover:underline hover:underline-offset-[10px] decoration-1 font-bold text-xl leading-9 text-white"
                 >
                   Explore page
                   <img src={arrow} alt="" />

@@ -1,4 +1,6 @@
 import { partners } from "../HomeData";
+import { RiSecurePaymentLine } from "react-icons/ri";
+import { MdOutlineExplore } from "react-icons/md";
 
 const Hero = () => {
   return (
@@ -14,11 +16,13 @@ const Hero = () => {
             non-disclosure.
           </div>
           <div className="flex flex-col gap-y-8 lg:flex-row ">
-            <button className="btn-dark font-bold text-xl text-white font-manrope md:w-[80%] lg:w-full hover:bg-[#0A2640] hover:text-white">
+            <button className="flex items-center justify-center gap-x-2 md:gap-x-1 btn-dark font-bold text-xl text-white font-manrope md:w-[80%] lg:w-full hover:bg-[#0A2640] hover:text-white">
               Buy template
+              <RiSecurePaymentLine />
             </button>
-            <button className="btn-white py-4 px-14 lg:ml-4 font-manrope  md:w-[80%] lg:w-full hover:bg-[#0A2640] hover:text-white">
+            <button className="flex items-center justify-center gap-x-2 md:gap-x-1 btn-white text-xl py-4 px-14 lg:ml-4 font-manrope  md:w-[80%] lg:w-full hover:bg-[#0A2640] hover:text-white">
               Explore
+              <MdOutlineExplore />
             </button>
           </div>
         </div>
